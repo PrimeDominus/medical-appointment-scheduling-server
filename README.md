@@ -1,15 +1,12 @@
 # medical-appointment-scheduling-server
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/sebastianhaas/medical-appointment-scheduling-server.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/sebastianhaas/medical-appointment-scheduling-server.svg?branch=master)](https://travis-ci.org/sebastianhaas/medical-appointment-scheduling-server)
-[![Join the chat at https://gitter.im/sebastianhaas/medical-appointment-scheduling](https://badges.gitter.im/sebastianhaas/medical-appointment-scheduling.svg)](https://gitter.im/sebastianhaas/medical-appointment-scheduling?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Dependency Status](https://david-dm.org/sebastianhaas/medical-appointment-scheduling-server.svg)](https://david-dm.org/sebastianhaas/medical-appointment-scheduling-server)
-[![Node Security Platform](https://nodesecurity.io/orgs/medical-appointment-scheduling/projects/8f9025c1-1e52-486a-9713-9bf443554d6f/badge)](https://nodesecurity.io/orgs/medical-appointment-scheduling/projects/8f9025c1-1e52-486a-9713-9bf443554d6f)
-
-This is a backend for [sebastianhaas/medical-appointment-scheduling](https://github.com/sebastianhaas/medical-appointment-scheduling) built with loopback (express).
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=PrimeDominus_medical-appointment-scheduling-server&metric=alert_status)](https://sonarcloud.io/dashboard?id=PrimeDominus_medical-appointment-scheduling-server)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=PrimeDominus_medical-appointment-scheduling-server&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=PrimeDominus_medical-appointment-scheduling-server)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=PrimeDominus_medical-appointment-scheduling-server&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=PrimeDominus_medical-appointment-scheduling-server)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=PrimeDominus_medical-appointment-scheduling-server&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=PrimeDominus_medical-appointment-scheduling-server)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=PrimeDominus_medical-appointment-scheduling-server&metric=security_rating)](https://sonarcloud.io/dashboard?id=PrimeDominus_medical-appointment-scheduling-server)
 
 ## Features
-* Actively maintained
 * Provides data models required for [sebastianhaas/medical-appointment-scheduling](https://github.com/sebastianhaas/medical-appointment-scheduling)
 * REST API
  * including a web-based API explorer mounted at http://0.0.0.0:3000/explorer
@@ -43,8 +40,3 @@ post /appointments/generateRandomAppointments
 post /Attendances/generateRandomAttendances
 ```
 Some of these endpoints have an optional `locale` parameter to generate test data appropriate for a specific locale (currently only `de` and `en`). Just use the API explorer to find out about it.
-
-## Demo application
-The latest master of this repository is always published to [Heroku](https://scheduling-server.herokuapp.com/). You can either use the [API directly](https://scheduling-server.herokuapp.com/api/patients), browse the [API explorer](https://scheduling-server.herokuapp.com/explorer) or take a [look through the frontend](https://scheduling-client.herokuapp.com).
-
-Due to the limitations of Heroku's free dynos and database service, it might take a while for the application to load initially. Also, there is a 10k row limit for free databases. Sometimes you might have to wipe test data other users created before being able to add new content.
